@@ -951,7 +951,7 @@ input[type="radio"].visually-hidden {
 .main-nav__link:focus,
 .main-nav__link:hover,
 .main-nav__link--active {
-  color: #c7b299;
+  color: #000000;
 }
 @media (max-width: 767px) {
   .main-nav {
