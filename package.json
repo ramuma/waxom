@@ -5,7 +5,7 @@
   "description": "Тестовое задание",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "^8.3.0",
+    "autoprefixer": "^8.6.5",
     "browser-sync": "2.23.x",
     "del": "^3.0.0",
     "gulp": "3.9.x",
@@ -14,7 +14,7 @@
     "gulp-imagemin": "^4.1.0",
     "gulp-js-minify": "0.0.3",
     "gulp-less": "^3.5.0",
-    "gulp-plumber": "1.2.x",
+    "gulp-plumber": "^1.2.1",
     "gulp-postcss": "7.0.x",
     "gulp-posthtml": "^3.0.4",
     "gulp-rename": "^1.2.3",
