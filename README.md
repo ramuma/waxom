@@ -1,2 +1,2 @@
 # waxom
-https://ramuma.github.io/waxom/
+https://ramuma.github.io/waxom/build
