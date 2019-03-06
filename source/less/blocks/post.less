@@ -1,0 +1,122 @@
+.post {
+  position: relative;
+
+  width: 370px;
+  @media (max-width: @mobile-width) {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+
+.post__title {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-size: 20px;
+  line-height: auto;
+  color: #555555;
+}
+
+.post__tagline {
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  font-family: "Montserrat";
+  color: #8c8c8c;
+}
+
+.post__day {
+  display: block;
+  box-sizing: border-box;
+  width: 50px;
+  padding: 5px 10px;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: auto;
+  font-family: "Montserrat";
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #363636;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+}
+
+.post__month {
+  display: block;
+  box-sizing: border-box;
+  width: 50px;
+  padding: 2px 5px;
+
+  font-weight: 300px;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #252525;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.post__date {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+
+.post__pic {
+  margin: 0;
+  @media (max-width: @mobile-width) {
+    width: 300px;
+    margin: 0 auto;
+  }
+}
+
+.post__text-wrapper {
+  box-sizing: border-box;
+  padding: 25px;
+
+  border: 1px solid #f3efef;
+  border-top: none;
+  position: relative;
+  z-index: 5;
+}
+
+.post:hover .post__day,
+.post:focus .post__day {
+  background-color: #c7b299;
+}
+
+.post:hover .post__month,
+.post:focus .post__month {
+  background-color: #a48d72;
+}
+
+.post:hover .post__text-wrapper,
+.post:focus .post__text-wrapper {
+  background-color: #362f2d;
+  border: 1px solid #362f2d;
+  border-top: none;
+}
+
+.post:hover .post__title,
+.post:focus .post__title {
+  color: #c7b299;
+}
+
+.post:hover .post__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(17, 17, 17, 0.7);
+}

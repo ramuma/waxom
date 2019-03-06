@@ -1,0 +1,47 @@
+.read {
+  position: relative;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  font-family: "Raleway";
+  color: #c7b299;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 85px;
+    z-index: 1;
+
+    box-sizing: content-box;
+    width: 0;
+    height: 0;
+
+    border: 5px solid transparent;
+    border-left-width: 5px;
+    border-left-color: #c7b299;
+  }
+  &--about {
+    color: #d1d1d1;
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 2px;
+      left: 85px;
+      z-index: 1;
+
+      box-sizing: content-box;
+      width: 0;
+      height: 0;
+
+      border: 5px solid transparent;
+      border-left-width: 5px;
+      border-left-color: #d1d1d1;
+    }
+    &:hover {
+      &::after {
+        border-left-color: #c7b299;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.user-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 6%;
+}
+
+.user-nav__link:hover .user-nav__icon path,
+.user-nav__link:focus .user-nav__icon path {
+  fill: #c7b299;
+}
+
+@media (max-width: @tablet-width) {
+  .user-nav {
+    display: none;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .user-nav {
+    width: 8%;
+  }
+}

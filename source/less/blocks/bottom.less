@@ -1,0 +1,22 @@
+.bottom__left {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+}
+
+@media (max-width: 767px) {
+  .bottom__left {
+    font-size: 12px;
+    width: 100%;
+
+    @media (max-width: @mobile-width) {
+      font-size: 10px;
+    }
+  }
+}
+
+@media (min-width: 767px) and (max-width: @desktop-width) {
+  .bottom__left {
+    width: 51%;
+  }
+}

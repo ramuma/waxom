@@ -1,0 +1,151 @@
+.stats {
+  width: 100%;
+
+  background-color: #362620;
+  background-image: linear-gradient(90deg, rgb(33, 27, 25) 0%, rgb(78, 52, 39) 100%);
+}
+
+.stats__list {
+  display: flex;
+  justify-content: space-between;
+  width: 77%;
+  margin: 0 auto;
+  padding: 0;
+  padding-bottom: 60px;
+
+  list-style-type: none;
+  color: white;
+}
+
+.stats__item {
+  position: relative;
+
+  width: 140px;
+  margin: 0;
+  padding-top: 70px;
+  padding-bottom: 25px;
+
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin: 0 auto;
+
+    background-color: #ffffff;
+  }
+
+  &--clients {
+    &::before {
+      content: "";
+
+      display: block;
+      width: 44px;
+      height: 44px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+
+      background: url(../img/icon-clients.svg) no-repeat 100% 0;
+      background-size: cover;
+    }
+  }
+
+  &--cups {
+    &::before {
+      content: "";
+
+      display: block;
+      width: 48px;
+      height: 44px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+
+      background: url(../img/icon-cups.svg) no-repeat 100% 0;
+      background-size: cover;
+    }
+  }
+
+  &--posts {
+    &::before {
+      content: "";
+
+      display: block;
+      width: 44px;
+      height: 44px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+
+      background: url(../img/icon-posts.svg) no-repeat 100% 0;
+      background-size: cover;
+    }
+  }
+
+  &--likes {
+    &::before {
+      content: "";
+
+      display: block;
+      width: 44px;
+      height: 44px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+
+      background: url(../img/icon-likes.svg) no-repeat 100% 0;
+      background-size: cover;
+    }
+  }
+
+  &--launched {
+    &::before {
+      content: "";
+      top: 23px;
+      left: 20px;
+
+      display: block;
+      width: 54px;
+      height: 44px;
+      margin: 0 auto;
+      margin-bottom: 30px;
+
+      background: url(../img/icon-launched.svg) no-repeat 100% 0;
+      background-size: cover;
+    }
+  }
+}
+
+.stats__number {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-weight: 200;
+  font-size: 48px;
+  line-height: 36px;
+  font-family: "Montserrat";
+}
+
+.stats__desc {
+  margin: 0;
+
+  color: #c7b299;
+  text-transform: uppercase;
+}
+
+@media (max-width: @tablet-width) {
+  .stats__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .stats__list {
+    width: 95%;
+  }
+}

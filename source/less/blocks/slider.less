@@ -1,0 +1,32 @@
+.slider {
+  position: relative;
+
+  // padding-bottom: 380px;
+}
+
+.slider__offers {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+@media (max-width: @mobile-width) {
+  .slider {
+    padding-top: 30px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: @tablet-width) {
+  .slider {
+    padding-top: 100px;
+    padding-bottom: 70px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: @desktop-width) {
+  .slider {
+    padding-bottom: 150px;
+  }
+}

@@ -1,0 +1,27 @@
+.widget__preview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  @media (min-width: @desktop-width) {
+  width: 270px;
+  justify-content: space-between;
+  }
+}
+
+.widget__pic {
+  margin-bottom: 10px;
+  margin-right: 10px;
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
+    }
+}
+
+.widget__title {
+  margin: 0;
+  margin-bottom: 27px;
+}

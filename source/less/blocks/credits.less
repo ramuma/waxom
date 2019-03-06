@@ -1,0 +1,38 @@
+.credits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  color: #555555;
+}
+
+.credits__link {
+  color: #c7b299;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+.credits__desc {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: @tablet-width) {
+  .credits {
+    font-size: 12px;
+
+    @media (max-width: @mobile-width) {
+      font-size: 10px;
+      width: 280px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .credits {
+    width: 322px;
+  }
+}
